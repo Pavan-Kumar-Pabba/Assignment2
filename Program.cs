@@ -114,10 +114,18 @@ namespace Assignment2
             }
         }
 
+        /* Self Reflection:
+         This code aims to remove duplicate elements from an integer array while preserving the order of unique elements.
+        Initialized a pointer 'k' to track unique elements in the array. 
+        It iterates through the array, placing each unique element in its correct position.
+        Comparing the current element with the previous one to identify duplicates.
+        If the current element is different from the previous one, it's considered unique.
+        The count of unique elements is returned as the new length of the array.
+        Exception handling is included for robustness, though not essential here. 
+        */
 
 
         /*
-        
         Question 2:
         Given an integer array nums, move all 0's to the end of it while maintaining the relative order of the non-zero elements.
 
@@ -131,7 +139,7 @@ namespace Assignment2
 
         Input: nums = [0]
         Output: [0]
- 
+
         Constraints:
 
         1 <= nums.length <= 104
@@ -171,6 +179,14 @@ namespace Assignment2
                 throw;
             }
         }
+        /* Self Reflection 
+         This method aims to move all zero elements to the end of the array while preserving the order of non-zero elements.
+        It employs a simple two-pointer approach for efficient rearrangement of elements.
+        It utilizes a two-pointer approach, with one pointer tracking the position for non-zero elements. 
+        Iterating through the array, If the current element is non-zero, move it to the position pointed by nonZeroPointer. Converting the modified array to a list and returning
+        The code ensures robustness by handling cases where the input array is null or empty.
+
+
 
         /*
 
