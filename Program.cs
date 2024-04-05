@@ -114,7 +114,7 @@ namespace Assignment2
             }
         }
 
-        /* Self Reflection:
+        /* 1-Self Reflection:
          This code aims to remove duplicate elements from an integer array while preserving the order of unique elements.
         Initialized a pointer 'k' to track unique elements in the array. 
         It iterates through the array, placing each unique element in its correct position.
@@ -179,13 +179,13 @@ namespace Assignment2
                 throw;
             }
         }
-        /* Self Reflection 
+        /* 2-Self Reflection 
          This method aims to move all zero elements to the end of the array while preserving the order of non-zero elements.
         It employs a simple two-pointer approach for efficient rearrangement of elements.
         It utilizes a two-pointer approach, with one pointer tracking the position for non-zero elements. 
         Iterating through the array, If the current element is non-zero, move it to the position pointed by nonZeroPointer. Converting the modified array to a list and returning
         The code ensures robustness by handling cases where the input array is null or empty.
-
+        */
 
 
         /*
@@ -277,6 +277,16 @@ namespace Assignment2
             }
         }
 
+        /* 3- Self Reflection
+        Implements an algorithm to find all unique triplets in an array whose sum equals zero.
+        It employs a two-pointer approach along with sorting the array for efficiency.
+        Move left pointer towards right to explore other combinations.
+        Move right pointer towards left to explore other combinations
+        The code ensures to skip duplicates and handles edge cases gracefully. 
+        Exception handling is included for additional safety, though it's not particularly necessary in this context.
+        */
+
+
         /*
 
         Question 4:
@@ -326,6 +336,12 @@ namespace Assignment2
             }
         }
 
+        /* 4-Self Reflection
+        This method aims to find the maximum number of consecutive ones in a binary array.
+        It iterates through the array, tracking consecutive ones and updating the maximum count as needed.
+        Initialize variables to keep track of maximum consecutive ones and current consecutive ones. Iterate through each element of the array.Check if the current element is 1, indicating a consecutive sequence.Increment the count of consecutive ones.Update the maximum count of consecutive ones if necessary.If the current element is not 1, the consecutive sequence is broken.Return the maximum count of consecutive ones found
+        */
+
         /*
 
         Question 5:
@@ -370,6 +386,11 @@ namespace Assignment2
                 throw;
             }
         }
+        /* 5-Self Reflection:
+        This method aims to convert a binary number to its equivalent decimal representation.
+        It employs a iterating through each digit of the binary number and updating the decimal value.
+        It starts with initializing variables, then iterates through each digit of the binary number, updating the decimal value accordingly. Each step is commented for clarity, making it easy to follow the logic of the code. Exception handling is included for robustness, though not particularly essential in this specific scenario. Overall, this structured approach ensures that the code is easily understandable and maintainable.
+        */
 
         /*
 
@@ -454,6 +475,13 @@ namespace Assignment2
             }
         }
 
+        /* 6 - Self Reflection:
+        This method aims to find the maximum gap between elements after sorting the array.
+        It utilizes the concept of bucketing to efficiently determine the maximum gap.
+         It first identifies the minimum and maximum elements in the array. Then, it divides the range of numbers into buckets based on the size of the gap. Next, it places each element into its corresponding bucket. Finally, it calculates the maximum gap by comparing adjacent buckets.
+         Exception handling is included for robustness, though it's not particularly necessary in this specific scenario. Overall, this structured approach ensures clarity and efficiency in solving the problem.
+        
+
         /*
 
         Question:7
@@ -503,6 +531,13 @@ namespace Assignment2
                 throw;
             }
         }
+
+        /* 7 Self Reflection:
+        This method aims to find the largest perimeter of a triangle that can be formed by selecting three elements from the array.
+        It sorts the array and then iterates over it to find the largest valid triangle perimeter.
+        It first sorts the array in non-decreasing order to make it easier to identify valid triangles. Then, it iterates over the array, starting from the largest elements, and checks if the current triplet forms a valid triangle by comparing the sum of two smaller sides with the largest side.
+        If a valid triangle is found, it returns its perimeter; otherwise, it returns 0.
+        Each step is clearly commented for clarity, making it easy to understand the logic behind the code. 
 
         /*
 
@@ -559,6 +594,12 @@ namespace Assignment2
                 throw;
             }
         }
+
+        /* 8 Self Reflection:
+        This method aims to remove all occurrences of a specified substring 'part' from the input string 's'.
+        It repeatedly searches for the leftmost occurrence of 'part' in 's' and removes it until no more occurrences are found.
+        This method implements a simple algorithm to remove all occurrences of a specified substring 'part' from the input string 's'. It iteratively searches for the leftmost occurrence of 'part' in 's' using the IndexOf method and removes it using the Remove method until no more occurrences are found. Each step is commented for clarity, making it easy to understand the logic behind the code.
+        */
 
         /* Inbuilt Functions - Don't Change the below functions */
         static string ConvertIListToNestedList(IList<IList<int>> input)
